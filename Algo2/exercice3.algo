@@ -1,0 +1,23 @@
+ALGORITHM exercice1
+VAR
+
+BEGIN
+    read(c)
+    read(str)
+    search(c,str)
+    write(str)
+END
+
+PROCEDURE search()
+VAR
+    set_declarations
+BEGIN
+   str=uppercase(str)
+   c=uppercase(c)
+   FOR i FROM 0 TO str.length-1 STEP 1  DO
+   IF (str[i]=c) THEN 
+   delete str[i]
+   END_IF
+    
+   END_FOR
+END

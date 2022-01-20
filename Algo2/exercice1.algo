@@ -1,0 +1,25 @@
+ALGORITHM exercice1
+VAR
+    find :=false
+    pos:=-1
+BEGIN
+    read(c)
+    read(str)
+    search(c,str,var find,var pos)
+END
+
+PROCEDURE search()
+VAR
+    set_declarations
+BEGIN
+   str=uppercase(str)
+   c=uppercase(c)
+   FOR i FROM 0 TO str.length-1 STEP 1  DO
+   IF (str[i]=c) THEN 
+   pos=i
+   find=true
+   break
+   END_IF
+    
+   END_FOR
+END
